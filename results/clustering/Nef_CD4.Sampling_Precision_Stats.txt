@@ -1,0 +1,4 @@
+The sampling precision is defined as the largest allowed RMSD between the cluster centroid and a  Nef_CD4 model within any cluster in the finest clustering for which each sample contributes models proportionally to its size (considering both significance and magnitude of the difference) and for which a sufficient proportion of all models occur in sufficiently large clusters. The sampling precision for our  Nef_CD4  modeling is 13.485  A.
+Sampling precision, P-value, Cramer's V and percentage of clustered models below:
+13.485	1.000	0.000	100.000
+

@@ -1,0 +1,17 @@
+Getting top scoring models at subsets of size: [2999, 5999, 8999, 11999, 14999, 17999, 20999, 23999, 26999, 29999]
+Size of conformation matrix (9999, 1698, 3)
+Mode: cuda Superposition: True Number of cores: 1
+Size of RMSD matrix (flattened): (49985001,)
+Loading matrix data from Distances_Matrix.data.bin ...  Done
+Size of RMSD matrix (unpacked, N x N): (9999, 9999)
+Size of Sample A: 5429  ; Size of Sample B:  4570 ; Total 9999
+Calculating sampling precision
+Minimum and maximum pairwise model distances: 1.4848311 20.586523
+Clustering at thresholds: [ 1.48483109  5.48483109  9.48483109 13.48483109 17.48483109]
+(1.4848310947418213, 0.0, <type 'float'>, False)
+(5.484831094741821, 0.004954470611878752, <type 'numpy.float64'>, False)
+(9.484831094741821, 0.012828892522285243, <type 'numpy.float64'>, False)
+(13.484831094741821, 1.0, <type 'float'>, True)
+('-------------', 1.0)
+Clustering at threshold 13.485
+Contingency table: [[5429. 4570.]]
