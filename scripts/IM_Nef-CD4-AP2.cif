@@ -4621,25 +4621,23 @@ _ihm_external_files.details
 'Alignment for starting comparative model'
 3 1 ../data/Fixed_sequence_refined.pdb 'Input data or restraints' 1998746
 'Template for comparative modeling'
-4 1 ../data/mod_AP2_Nef.pdb 'Input data or restraints' 1040195
+4 1 ../data/mod_AP2_Nef.pdb 'Input data or restraints' 1040202
 'Starting model structure'
-5 1 ../data/Interlinks_Nef_AP2_20190116_renamed_renumbered_nonambiguos.csv
-'Input data or restraints' 4631 .
-6 1 ../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv
-'Input data or restraints' 3261 Crosslinks
-7 1 ../results/clustering/cluster.0/LPD_Nef.mrc
+5 1 ../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv
+'Input data or restraints' 3261 .
+6 1 ../results/clustering/cluster.0/LPD_Nef.mrc
 'Modeling or post-processing output' 529792 .
-8 1 ../results/clustering/cluster.0/LPD_CD4mut.mrc
+7 1 ../results/clustering/cluster.0/LPD_CD4mut.mrc
 'Modeling or post-processing output' 703264 .
-9 1 ../results/clustering/cluster.0/LPD_AP2alpha2.mrc
+8 1 ../results/clustering/cluster.0/LPD_AP2alpha2.mrc
 'Modeling or post-processing output' 651440 .
-10 1 ../results/clustering/cluster.0/LPD_AP2mu2.mrc
+9 1 ../results/clustering/cluster.0/LPD_AP2mu2.mrc
 'Modeling or post-processing output' 552640 .
-11 1 ../results/clustering/cluster.0/LPD_AP2sigma.mrc
+10 1 ../results/clustering/cluster.0/LPD_AP2sigma.mrc
 'Modeling or post-processing output' 276208 .
-12 1 ../results/clustering/cluster.0/LPD_AP2beta2.mrc
+11 1 ../results/clustering/cluster.0/LPD_AP2beta2.mrc
 'Modeling or post-processing output' 833064 .
-13 1 ../data/mod_extended_AP2beta2.py 'Modeling workflow or script' 1240
+12 1 ../data/mod_extended_AP2beta2.py 'Modeling workflow or script' 1240
 'Script for starting comparative model'
 #
 #
@@ -4679,7 +4677,7 @@ _ihm_dataset_external_reference.file_id
 1 1 3
 2 3 4
 3 4 5
-4 5 6
+4 5 5
 #
 #
 loop_
@@ -4769,12 +4767,12 @@ loop_
 _ihm_starting_computational_models.starting_model_id
 _ihm_starting_computational_models.software_id
 _ihm_starting_computational_models.script_file_id
-1 3 13
-2 3 13
-3 3 13
-4 3 13
-5 3 13
-6 3 13
+1 3 12
+2 3 12
+3 3 12
+4 3 12
+5 3 12
+6 3 12
 #
 #
 loop_
@@ -17887,186 +17885,186 @@ _ihm_cross_link_restraint.psi
 _ihm_cross_link_restraint.sigma_1
 _ihm_cross_link_restraint.sigma_2
 _ihm_cross_link_restraint.pseudo_site_flag
-1 1 4 D 11 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-2 2 6 F 131 LYS 6 F 139 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-3 3 3 C 35 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-4 4 6 F 11 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-5 5 1 A 92 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-6 6 1 A 94 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-7 7 5 E 13 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-8 8 3 C 43 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-9 9 6 F 12 LYS 6 F 26 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-10 10 4 D 59 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-11 11 4 D 11 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-12 12 3 C 35 LYS 3 C 45 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-13 13 3 C 556 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-14 14 3 C 35 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-15 15 6 F 5 LYS 6 F 117 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-16 16 6 F 117 LYS 3 C 378 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-17 17 3 C 296 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-18 18 3 C 24 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-19 19 6 F 27 LYS 6 F 36 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-20 20 6 F 12 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-21 21 6 F 12 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-22 22 4 D 59 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-23 23 1 A 92 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-24 24 5 E 13 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-25 25 4 D 59 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-26 26 3 C 55 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-27 27 3 C 35 LYS 3 C 61 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-28 28 3 C 296 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-29 29 3 C 35 LYS 1 A 21 ALA . . 'upper bound' ALL by-feature 21.000 0.485 1.385
-1.385 NO
-30 30 6 F 12 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-31 31 4 D 95 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-32 32 6 F 45 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.331 1.385
-1.385 NO
-33 33 6 F 282 LYS 6 F 318 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-34 34 3 C 299 LYS 2 B 418 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-35 35 3 C 299 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-36 36 3 C 45 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-37 37 4 D 95 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-38 38 3 C 35 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-39 39 4 D 59 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-40 40 4 D 95 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-41 41 5 E 13 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-42 42 6 F 117 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-43 43 3 C 378 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.331
-1.385 1.385 NO
-44 44 6 F 5 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-45 45 6 F 12 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.331 1.385
-1.385 NO
-46 46 3 C 43 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-47 47 1 A 94 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-48 48 6 F 318 LYS 6 F 383 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-49 49 6 F 35 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-50 50 3 C 570 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-51 51 3 C 45 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-52 52 6 F 11 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-53 53 6 F 26 LYS 6 F 31 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-54 54 1 A 21 ALA 1 A 92 LYS . . 'upper bound' ALL by-feature 21.000 0.482 1.385
-1.385 NO
-55 55 4 D 11 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-56 56 6 F 11 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-57 57 6 F 5 LYS 6 F 12 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-58 58 3 C 35 LYS 3 C 48 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-59 59 6 F 27 LYS 6 F 31 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-60 60 4 D 95 LYS 3 C 117 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-61 61 3 C 556 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-62 62 6 F 359 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-63 63 3 C 31 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-64 64 6 F 5 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-65 65 6 F 272 LYS 6 F 318 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-66 66 3 C 35 LYS 3 C 117 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-67 67 3 C 45 LYS 3 C 56 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-68 68 6 F 420 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-69 69 6 F 5 LYS 3 C 298 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-70 70 3 C 299 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-71 71 3 C 35 LYS 1 A 94 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-72 72 3 C 35 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-73 73 4 D 59 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-74 74 6 F 5 LYS 6 F 27 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-75 75 3 C 296 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-76 76 2 B 412 ARG 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.482
-1.385 1.385 NO
-77 77 6 F 12 LYS 6 F 27 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-78 78 4 D 11 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-79 79 1 A 94 LYS 2 B 418 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-80 80 3 C 117 LYS 3 C 153 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-81 81 4 D 59 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-82 82 6 F 5 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-83 83 3 C 35 LYS 3 C 43 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-84 84 6 F 26 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.482 1.385
-1.385 NO
-85 85 6 F 383 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-86 86 5 E 30 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-87 87 3 C 378 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.485
-1.385 1.385 NO
-88 88 6 F 5 LYS 1 A 94 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-89 89 6 F 5 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
-90 90 3 C 48 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.485 1.385
-1.385 NO
+1 1 4 D 11 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+2 2 6 F 131 LYS 6 F 139 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+3 3 3 C 35 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+4 4 6 F 11 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+5 5 1 A 92 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+6 6 1 A 94 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+7 7 5 E 13 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+8 8 3 C 43 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+9 9 6 F 12 LYS 6 F 26 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+10 10 4 D 59 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+11 11 4 D 11 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+12 12 3 C 35 LYS 3 C 45 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+13 13 3 C 556 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+14 14 3 C 35 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+15 15 6 F 5 LYS 6 F 117 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+16 16 6 F 117 LYS 3 C 378 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+17 17 3 C 296 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+18 18 3 C 24 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+19 19 6 F 27 LYS 6 F 36 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+20 20 6 F 12 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+21 21 6 F 12 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+22 22 4 D 59 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+23 23 1 A 92 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+24 24 5 E 13 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+25 25 4 D 59 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+26 26 3 C 55 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+27 27 3 C 35 LYS 3 C 61 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+28 28 3 C 296 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+29 29 3 C 35 LYS 1 A 21 ALA . . 'upper bound' ALL by-feature 21.000 0.487 3.532
+3.532 NO
+30 30 6 F 12 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+31 31 4 D 95 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+32 32 6 F 45 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.355 3.532
+3.532 NO
+33 33 6 F 282 LYS 6 F 318 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+34 34 3 C 299 LYS 2 B 418 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+35 35 3 C 299 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+36 36 3 C 45 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+37 37 4 D 95 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+38 38 3 C 35 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+39 39 4 D 59 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+40 40 4 D 95 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+41 41 5 E 13 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+42 42 6 F 117 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+43 43 3 C 378 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.355
+3.532 3.532 NO
+44 44 6 F 5 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+45 45 6 F 12 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.355 3.532
+3.532 NO
+46 46 3 C 43 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+47 47 1 A 94 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+48 48 6 F 318 LYS 6 F 383 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+49 49 6 F 35 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+50 50 3 C 570 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+51 51 3 C 45 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+52 52 6 F 11 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+53 53 6 F 26 LYS 6 F 31 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+54 54 1 A 21 ALA 1 A 92 LYS . . 'upper bound' ALL by-feature 21.000 0.462 3.532
+3.532 NO
+55 55 4 D 11 LYS 3 C 24 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+56 56 6 F 11 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+57 57 6 F 5 LYS 6 F 12 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+58 58 3 C 35 LYS 3 C 48 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+59 59 6 F 27 LYS 6 F 31 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+60 60 4 D 95 LYS 3 C 117 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+61 61 3 C 556 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+62 62 6 F 359 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+63 63 3 C 31 LYS 3 C 35 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+64 64 6 F 5 LYS 3 C 299 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+65 65 6 F 272 LYS 6 F 318 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+66 66 3 C 35 LYS 3 C 117 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+67 67 3 C 45 LYS 3 C 56 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+68 68 6 F 420 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+69 69 6 F 5 LYS 3 C 298 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+70 70 3 C 299 LYS 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+71 71 3 C 35 LYS 1 A 94 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+72 72 3 C 35 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+73 73 4 D 59 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+74 74 6 F 5 LYS 6 F 27 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+75 75 3 C 296 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+76 76 2 B 412 ARG 2 B 417 LYS . . 'upper bound' ALL by-residue 21.000 0.462
+3.532 3.532 NO
+77 77 6 F 12 LYS 6 F 27 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+78 78 4 D 11 LYS 3 C 31 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+79 79 1 A 94 LYS 2 B 418 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+80 80 3 C 117 LYS 3 C 153 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+81 81 4 D 59 LYS 3 C 26 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+82 82 6 F 5 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+83 83 3 C 35 LYS 3 C 43 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+84 84 6 F 26 LYS 3 C 55 LYS . . 'upper bound' ALL by-residue 21.000 0.462 3.532
+3.532 NO
+85 85 6 F 383 LYS 3 C 570 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+86 86 5 E 30 LYS 4 D 59 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+87 87 3 C 378 LYS 2 B 411 LYS . . 'upper bound' ALL by-residue 21.000 0.487
+3.532 3.532 NO
+88 88 6 F 5 LYS 1 A 94 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+89 89 6 F 5 LYS 1 A 92 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
+90 90 3 C 48 LYS 3 C 57 LYS . . 'upper bound' ALL by-residue 21.000 0.487 3.532
+3.532 NO
 #
 #
 loop_
@@ -19827,12 +19825,12 @@ _ihm_localization_density_files.ensemble_id
 _ihm_localization_density_files.entity_id
 _ihm_localization_density_files.asym_id
 _ihm_localization_density_files.entity_poly_segment_id
-1 7 1 1 A 27
-2 8 1 2 B 28
-3 9 1 3 C 29
-4 10 1 4 D 30
-5 11 1 5 E 5
-6 12 1 6 F 31
+1 6 1 1 A 27
+2 7 1 2 B 28
+3 8 1 3 C 29
+4 9 1 4 D 30
+5 10 1 5 E 5
+6 11 1 6 F 31
 #
 #
 loop_

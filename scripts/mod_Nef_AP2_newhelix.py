@@ -205,7 +205,7 @@ if '--mmcif' in sys.argv:
     import ihm.restraint
     import ihm.geometry
     
-    fname = '../data/Interlinks_Nef_AP2_20190116_renamed_renumbered_nonambiguos.csv'
+    fname = '../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv'
         
     D_dump = ihm.dumper._DatasetDumper()
     l = ihm.location.InputFileLocation(fname)
