@@ -189,7 +189,7 @@ rex=IMP.pmi.macros.ReplicaExchange0(mdl,
 rex.execute_macro()
 
 ##############################
-# Generate mmcig
+# Generate mmcif
 ##############################  
 if '--mmcif' in sys.argv:
     import ihm.cross_linkers
@@ -207,12 +207,6 @@ if '--mmcif' in sys.argv:
     
     fname = '../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv'
         
-    D_dump = ihm.dumper._DatasetDumper()
-    l = ihm.location.InputFileLocation(fname)
-    D = ihm.dataset.Dataset(l)
-    po.system.orphan_datasets.append(D)
-    D_dump.finalize(po.system)
-
     s = po.system
     print("restraint datasets:", [r.dataset for r in s.restraints])
     # Datasets for XL-MS restraint
@@ -253,7 +247,7 @@ if '--mmcif' in sys.argv:
     # Look up the ihm.AsymUnit corresponding to a PMI component name
     for asym in po.asym_units:
         name = asym.split('.')[0]
-        fname = f'../results/clustering/cluster.0/LPD_{name}.mrc'
+        fname = f'../results/clustering/cluster.0/LPD_{name}_orie.mrc'
         print('fname', fname)
         loc = ihm.location.OutputFileLocation(fname)
         den = ihm.model.LocalizationDensity(file=loc, asym_unit=po.asym_units[asym])
