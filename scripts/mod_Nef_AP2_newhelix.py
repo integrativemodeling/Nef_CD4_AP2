@@ -22,7 +22,10 @@ import IMP.pmi.mmcif
 
 import random
 import numpy as np
-import sys
+import os, sys
+
+sys.path.append('../')
+import make_archive
 
 ###################### SYSTEM SETUP #####################
 
@@ -46,14 +49,11 @@ bs_spec1 = IMP.pmi.macros.BuildSystem(mdl,
 ##############################
 
 if '--mmcif' in sys.argv:
-    print('Hola')
     # Record the modeling protocol to an mmCIF file
     po = IMP.pmi.mmcif.ProtocolOutput(open('IM_Nef-CD4-AP2.cif', 'w'))
     po.system.title = ('Structural Basis of CD4 Downregulation by HIV-1 Nef')
     bs_spec1.system.add_protocol_output(po)
     
-    # Add publication
-    #po.system.citations.append(ihm.Citation.from_pubmed_id(0000))
 
 ##############################
 # Build state
@@ -128,6 +128,7 @@ xl1 = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(root
                                                                             resolution=1.0,
                                                                             length=21.0,
                                                                             slope=0.02)
+
 xl1.add_to_model()
 xl1.set_weight(1.0)
 
@@ -206,7 +207,11 @@ if '--mmcif' in sys.argv:
     import ihm.geometry
     
     fname = '../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv'
-        
+
+    # Add publication
+    po.system.title = "Structural basis of CD4 downregulation by HIV-1 Nef"
+    po.system.citations.append(ihm.Citation.from_pubmed_id(32719457))
+    
     s = po.system
     print("restraint datasets:", [r.dataset for r in s.restraints])
     # Datasets for XL-MS restraint
@@ -237,7 +242,7 @@ if '--mmcif' in sys.argv:
                                 localization_densities={}, ensemble_file=None)
     
     # Add the model from RMF
-    rh = RMF.open_rmf_file_read_only('../results/clustering/cluster.0/cluster_center_model.rmf3')
+    rh = RMF.open_rmf_file_read_only('../clustering/cluster.0/cluster_center_model.rmf3')
     IMP.rmf.link_hierarchies(rh, [hier])
     IMP.rmf.load_frame(rh, RMF.FrameID(0))
     del rh
@@ -247,20 +252,31 @@ if '--mmcif' in sys.argv:
     # Look up the ihm.AsymUnit corresponding to a PMI component name
     for asym in po.asym_units:
         name = asym.split('.')[0]
-        fname = f'../results/clustering/cluster.0/LPD_{name}_orie.mrc'
+        fname = f'../clustering/cluster.0/LPD_{name}_orie.mrc'
         print('fname', fname)
         loc = ihm.location.OutputFileLocation(fname)
         den = ihm.model.LocalizationDensity(file=loc, asym_unit=po.asym_units[asym])
         # Add to ensemble
         e.densities.append(den)
+
+    # Point to the raw mass spec data and peaklists used to derive the crosslinks.
+    l = ihm.location.PRIDELocation('PXD019338',
+                                   details='All raw mass spectrometry files and '
+                                   'peaklists used in the study')
+    xl1.dataset.add_primary(ihm.dataset.MassSpecDataset(location=l))
         
 
     # Replace local links with DOIs
-    #repo = ihm.location.Repository(doi="10.5281/zenodo.2598760", root="../..",
-    #              top_directory="salilab-imp_deposition_tutorial-1ad5919",
-    #              url="https://zenodo.org/record/2598760/files/salilab/"
-    #                  "imp_deposition_tutorial-v0.2.zip")
-    #po.system.update_locations_in_repositories([repo])
+    repos = []
+    for subdir, zipname in make_archive.ARCHIVES.items():
+        print('subdir', subdir)
+        repos.append(ihm.location.Repository(
+            doi="10.5281/zenodo.3836213", root="../%s" % subdir,
+            url="https://zenodo.org/record/3836213/files/%s.zip" % zipname,
+            top_directory=os.path.basename(subdir)))
+    
+    po.system.update_locations_in_repositories(repos)
+    
 
 po.flush()
 

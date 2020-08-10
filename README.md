@@ -36,7 +36,7 @@ The modeling protocol will work with a default build of IMP, but for most effect
 
 ## Running the IMP/PMI scripts for the  Nef-CD4(CD)-AP2(Δμ2-CTD) complex:
 - `cd scripts`
-- `python modeling.py &> modeling.out` (on a single processor; prepend `mpirun -np 4` or similar if you built IMP with MPI support)
+- `python mod_Nef_AP2_newhelix.py &> mod_Nef_AP2_newhelix.out` (on a single processor; prepend `mpirun -np 4` or similar if you built IMP with MPI support)
 - You can add the `--test` option to the command line to quickly test the
   script; this simply runs the sampling for fewer steps (should complete
   in an hour or two).
@@ -46,9 +46,6 @@ combine results from multiple independent runs):
 - `cd scripts/analysis`
 - `python run_analysis.py ../`
 - (If you used the `--test` option above, use it here too.)
-
-Finally, to generate the publication figures:
-- `cd scripts/figures`
 
 ## Information
 
@@ -69,5 +66,5 @@ _Testable_: Yes.
 _Parallelizeable_: Yes
 
 _Publications_:
- - Kwon, Yonghwa, Robyn Kaake, Ignacia Echeverria, Marissa Suarez, Charlotte Stoneham, Peter W. Ramirez, Jacob Kress et al. [Structural Basis of CD4 Downregulation by HIV-1 Nef](https://www.biorxiv.org/content/biorxiv/early/2020/04/23/2020.04.21.054007.full.pdf) bioRxiv (2020).
+ - Kwon, Y., Kaake, R.M., Echeverria, I. et al. Structural basis of CD4 downregulation by HIV-1 Nef. Nat Struct Mol Biol (2020). (https://doi.org/10.1038/s41594-020-0463-z).
 
