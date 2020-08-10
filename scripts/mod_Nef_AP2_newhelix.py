@@ -24,7 +24,7 @@ import random
 import numpy as np
 import os, sys
 
-sys.path.append('../')
+sys.path.append('../util/')
 import make_archive
 
 ###################### SYSTEM SETUP #####################
