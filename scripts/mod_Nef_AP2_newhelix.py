@@ -16,7 +16,7 @@ import IMP.pmi.restraints
 import IMP.pmi.restraints.stereochemistry
 import IMP.pmi.restraints.crosslinking
 import IMP.pmi.restraints.basic
-import IMP.pmi.restraints.occams
+#import IMP.pmi.restraints.occams
 from IMP.pmi.io.crosslink import CrossLinkDataBaseKeywordsConverter
 import IMP.pmi.mmcif
 
@@ -29,7 +29,7 @@ import make_archive
 
 ###################### SYSTEM SETUP #####################
 
-include_Occams = True
+include_Occams = False
 
 mdl = IMP.Model()
 
@@ -235,6 +235,7 @@ if '--mmcif' in sys.argv:
                             feature='RMSD', num_models_begin=200000,
                             num_models_end=9999))
     
+
     # Create an ensemble for the cluster
     e = po._add_simple_ensemble(analysis.steps[-1],
                                 name="Cluster 0", num_models=9999,
@@ -258,6 +259,35 @@ if '--mmcif' in sys.argv:
         den = ihm.model.LocalizationDensity(file=loc, asym_unit=po.asym_units[asym])
         # Add to ensemble
         e.densities.append(den)
+    
+    # Add uniprot of proteins
+
+    lpep = ihm.LPeptideAlphabet()
+    d = 'Construct used for crystallization'
+    sd_nef = [ihm.reference.SeqDif(33, lpep['A'], lpep['V'], details=d),
+              ihm.reference.SeqDif(65, lpep['K'], lpep['E'], details=d),
+              ihm.reference.SeqDif(133, lpep['I'], lpep['V'], details=d)]
+
+    sd_AP2b2 = [ihm.reference.SeqDif(16, lpep['F'], lpep['S'], details=d),
+                ihm.reference.SeqDif(421, lpep['Y'], lpep['H'], details=d),
+                ihm.reference.SeqDif(434, lpep['E'], lpep['G'], details=d)]
+
+    # name : (uniprot id, mutations, [[db_begin, db_end, entity_begin, entity_end]]
+    Uniprot={'Nef.0':      ('P03404',sd_nef,[[26,202,26,202]]),
+             'CD4mut.0':   ('P01730',[],[[28,387,1,360]]),
+             'AP2alpha2.0':('P18484',[],[[1,272,1,272],[273,621,274,622]]),
+             'AP2mu2.0':   ('Q96CW1',[],[]),
+             'AP2sigma.0': ('P53680',[],[]),
+             'AP2beta2.0': ('P63010',sd_AP2b2,[[1,591,1,591]])}
+
+    for prot, (entry, sd, limits) in Uniprot.items():
+        print(prot, entry, sd, limits)
+        ref = ihm.reference.UniProtSequence.from_accession(entry)
+        for seg in limits:
+            ref.alignments.append(ihm.reference.Alignment(
+                db_begin=seg[0], db_end=seg[1], entity_begin=seg[2], entity_end=seg[3], seq_dif=sd))
+            
+        po.asym_units[prot].entity.references.append(ref)
 
     # Point to the raw mass spec data and peaklists used to derive the crosslinks.
     l = ihm.location.PRIDELocation('PXD019338',
