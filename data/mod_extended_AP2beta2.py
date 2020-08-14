@@ -1,5 +1,6 @@
 from modeller import *
 from modeller.automodel import *
+import sys
 
 class MyModel(automodel):
     def special_restraints(self, aln):
@@ -28,7 +29,7 @@ env.io.hetatm = True
 a = MyModel(env, alnfile='aln_2vgl.pir', knowns=('Fixed_sequence_refined','2vgl_B_nohelix'),sequence='mod_AP2_Nef',assess_methods=(assess.DOPE,assess.GA341, assess.normalized_dope))
 
 a.starting_model = 1
-a.ending_model = 50
+a.ending_model = 1 if '--test' in sys.argv else 50
 a.make()                           # do comparative modeling
 
 
