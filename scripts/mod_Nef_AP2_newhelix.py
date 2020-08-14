@@ -243,7 +243,7 @@ if '--mmcif' in sys.argv:
                                 localization_densities={}, ensemble_file=None)
     
     # Add the model from RMF
-    rh = RMF.open_rmf_file_read_only('../clustering/cluster.0/cluster_center_model.rmf3')
+    rh = RMF.open_rmf_file_read_only('../results/clustering/cluster.0/cluster_center_model.rmf3')
     IMP.rmf.link_hierarchies(rh, [hier])
     IMP.rmf.load_frame(rh, RMF.FrameID(0))
     del rh
@@ -253,7 +253,7 @@ if '--mmcif' in sys.argv:
     # Look up the ihm.AsymUnit corresponding to a PMI component name
     for asym in po.asym_units:
         name = asym.split('.')[0]
-        fname = f'../clustering/cluster.0/LPD_{name}_orie.mrc'
+        fname = f'../results/clustering/cluster.0/LPD_{name}_orie.mrc'
         print('fname', fname)
         loc = ihm.location.OutputFileLocation(fname)
         den = ihm.model.LocalizationDensity(file=loc, asym_unit=po.asym_units[asym])

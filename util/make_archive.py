@@ -21,7 +21,7 @@ ARCHIVES = {
   'data': 'data',
   'scripts': 'modeling_scripts',
   'models': 'DCD_models',
-  'clustering': 'clustering_results'}
+  'results/clustering': 'clustering_results'}
 
 REPO="Nef-CD4-AP2"
 
