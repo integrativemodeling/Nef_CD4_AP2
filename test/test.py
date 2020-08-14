@@ -28,7 +28,7 @@ class Tests(unittest.TestCase):
 
     def test_simple(self):
         """Test model building"""
-        os.chdir(os.path.join(TOPDIR, 'production_script'))
+        os.chdir(os.path.join(TOPDIR, 'scripts'))
         p = subprocess.check_call(["python", "mod_Nef_AP2_newhelix.py",
                                    "--test"])
         # todo: assert outputs
