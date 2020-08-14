@@ -308,9 +308,4 @@ if '--mmcif' in sys.argv:
     po.system.update_locations_in_repositories(repos)
     
 
-po.flush()
-
-
-
-exit()
-
+    po.flush()
