@@ -1,5 +1,7 @@
 # Integrative structure of the Nef-CD4(CD)-AP2(Δμ2-CTD) complex
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3836213.svg)](https://doi.org/10.5281/zenodo.3836213)
+
 These scripts demonstrate the use of [IMP](https://integrativemodeling.org), [MODELLER](https://salilab.org/modeller), and [PMI](https://github.com/salilab/pmi) in the modeling of the solution structure of the Nef-CD4-AP2 complex using 90 DSSO chemical cross-links and the X-ray structure of the crystal structure, a comparative model of the β2 subunit 24-89 region built based on the AP2 structure.
 
 First, [MODELLER](https://salilab.org/modeller) is used to generate comparative model of the β2 subunit 24-89 region. Then, IMP
