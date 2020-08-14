@@ -1,7 +1,7 @@
 title: Integrative structures of the Nef-CD4-AP2 complex
 tags: [chemical crosslinks, PMI, X-ray, MODELLER]
 prereqs: [python/numpy, modeller]
-accessions: [PDBDEV_000000XX, PDBDEV_000000XX]
+accessions: [PDBDEV_00000050]
 pmid: 32719457
 test:
     runtime: 24h
