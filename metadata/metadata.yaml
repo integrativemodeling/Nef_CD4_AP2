@@ -5,4 +5,4 @@ accessions: [PDBDEV_00000050]
 pmid: 32719457
 test:
     runtime: 24h
-    build: develop
+    build: release
