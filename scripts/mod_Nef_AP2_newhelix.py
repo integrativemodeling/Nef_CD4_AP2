@@ -19,6 +19,7 @@ import IMP.pmi.restraints.basic
 #import IMP.pmi.restraints.occams
 from IMP.pmi.io.crosslink import CrossLinkDataBaseKeywordsConverter
 import IMP.pmi.mmcif
+import ihm.cross_linkers
 
 import random
 import numpy as np
@@ -123,11 +124,10 @@ cldbkc.set_psi_key("Score")
 cldb=IMP.pmi.io.crosslink.CrossLinkDataBase(cldbkc)
 cldb.create_set_from_file("../data/Interlinks_Nef_AP2_20190723_renamed_renumbered_nonambiguos.csv")
 
-xl1 = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(root_hier=hier,
-                                                                            CrossLinkDataBase=cldb,
-                                                                            resolution=1.0,
-                                                                            length=21.0,
-                                                                            slope=0.02)
+xl1 = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+        root_hier=hier, database=cldb,
+        resolution=1.0, length=21.0, slope=0.02,
+        linker=ihm.cross_linkers.dsso)
 
 xl1.add_to_model()
 xl1.set_weight(1.0)
@@ -193,7 +193,6 @@ rex.execute_macro()
 # Generate mmcif
 ##############################  
 if '--mmcif' in sys.argv:
-    import ihm.cross_linkers
     import ihm.dumper
     import ihm.format
     import ihm.location
