@@ -51,7 +51,7 @@ bs_spec1 = IMP.pmi.macros.BuildSystem(mdl,
 
 if '--mmcif' in sys.argv:
     # Record the modeling protocol to an mmCIF file
-    po = IMP.pmi.mmcif.ProtocolOutput(open('IM_Nef-CD4-AP2.cif', 'w'))
+    po = IMP.pmi.mmcif.ProtocolOutput()
     po.system.title = ('Structural Basis of CD4 Downregulation by HIV-1 Nef')
     bs_spec1.system.add_protocol_output(po)
     
@@ -306,5 +306,6 @@ if '--mmcif' in sys.argv:
     
     po.system.update_locations_in_repositories(repos)
     
-
-    po.flush()
+    po.finalize()
+    with open('IM_Nef-CD4-AP2.cif', 'w') as fh:
+        ihm.dumper.write(fh, [s])
