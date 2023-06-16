@@ -176,7 +176,7 @@ num_frames = 50000
 if '--mmcif' in sys.argv or '--test' in sys.argv:
     num_frames=5
 
-rex=IMP.pmi.macros.ReplicaExchange0(mdl,
+rex=IMP.pmi.macros.ReplicaExchange(mdl,
                                     root_hier=hier,                          
                                     monte_carlo_sample_objects=dof.get_movers(),
                                     replica_exchange_maximum_temperature=3.0,
