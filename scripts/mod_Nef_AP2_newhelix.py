@@ -262,17 +262,17 @@ if '--mmcif' in sys.argv:
 
     lpep = ihm.LPeptideAlphabet()
     d = 'Construct used for crystallization'
-    sd_nef = [ihm.reference.SeqDif(33, lpep['A'], lpep['V'], details=d),
-              ihm.reference.SeqDif(65, lpep['K'], lpep['E'], details=d),
-              ihm.reference.SeqDif(133, lpep['I'], lpep['V'], details=d)]
+    sd_nef = [ihm.reference.SeqDif(13, lpep['A'], lpep['V'], details=d),
+              ihm.reference.SeqDif(45, lpep['K'], lpep['E'], details=d),
+              ihm.reference.SeqDif(113, lpep['I'], lpep['V'], details=d)]
 
     sd_AP2b2 = [ihm.reference.SeqDif(16, lpep['F'], lpep['S'], details=d),
                 ihm.reference.SeqDif(421, lpep['Y'], lpep['H'], details=d),
                 ihm.reference.SeqDif(434, lpep['E'], lpep['G'], details=d)]
 
     # name : (uniprot id, mutations, [[db_begin, db_end, entity_begin, entity_end]]
-    Uniprot={'Nef.0':      ('P03404',sd_nef,[[26,202,26,202]]),
-             'CD4mut.0':   ('P01730',[],[[28,387,1,360]]),
+    Uniprot={'Nef.0':      ('P03404',sd_nef,[[26,202,6,182]]),
+             'CD4mut.0':   ('P01730',[],[[423,444,5,26]]),
              'AP2alpha2.0':('P18484',[],[[1,272,1,272],[273,621,274,622]]),
              'AP2mu2.0':   ('Q96CW1',[],[]),
              'AP2sigma.0': ('P53680',[],[]),
