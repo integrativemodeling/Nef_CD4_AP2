@@ -273,7 +273,9 @@ if '--mmcif' in sys.argv:
     # name : (uniprot id, mutations, [[db_begin, db_end, entity_begin, entity_end]]
     Uniprot={'Nef.0':      ('P03404',sd_nef,[[26,202,6,182]]),
              'CD4mut.0':   ('P01730',[],[[423,444,5,26]]),
-             'AP2alpha2.0':('P18484',[],[[1,272,1,272],[273,621,274,622]]),
+             # Insertion at position 272; could instead use a single alignment
+             # and ihm.reference.InsertionSeqDif(272, lpep['E'])
+             'AP2alpha2.0':('P18484',[],[[1,271,1,271],[272,620,273,621]]),
              'AP2mu2.0':   ('Q96CW1',[],[]),
              'AP2sigma.0': ('P53680',[],[]),
              'AP2beta2.0': ('P63010',sd_AP2b2,[[1,591,1,591]])}
